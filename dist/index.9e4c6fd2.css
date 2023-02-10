@@ -1,0 +1,36 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.header {
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+}
+
+.header img {
+  height: 60px;
+}
+
+.header img.userIcon {
+  height: 40px;
+}
+
+.header .searchInput {
+  height: 40px;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  display: block;
+}
+
+/*# sourceMappingURL=index.9e4c6fd2.css.map */
