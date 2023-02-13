@@ -143,8 +143,8 @@
     }
   }
 })({"1xC6H":[function(require,module,exports) {
-var Refresh = require("2443f90b77b675b4");
-var ErrorOverlay = require("1ff25b6879fd6f38");
+var Refresh = require("dff9f20f58ced8f6");
+var ErrorOverlay = require("a5ba31464d056fa1");
 Refresh.injectIntoGlobalHook(window);
 window.$RefreshReg$ = function() {};
 window.$RefreshSig$ = function() {
@@ -163,11 +163,11 @@ window.addEventListener("parcelhmraccept", ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"2443f90b77b675b4":"786KC","1ff25b6879fd6f38":"1dldy"}],"786KC":[function(require,module,exports) {
+},{"dff9f20f58ced8f6":"786KC","a5ba31464d056fa1":"1dldy"}],"786KC":[function(require,module,exports) {
 "use strict";
-module.exports = require("326dea2066c0aea5");
+module.exports = require("4e04f8c3896fa79a");
 
-},{"326dea2066c0aea5":"hdge7"}],"hdge7":[function(require,module,exports) {
+},{"4e04f8c3896fa79a":"hdge7"}],"hdge7":[function(require,module,exports) {
 /** @license React v0.9.0
  * react-refresh-runtime.development.js
  *
@@ -628,7 +628,7 @@ module.exports = require("326dea2066c0aea5");
 })();
 
 },{}],"1dldy":[function(require,module,exports) {
-var process = require("9d19ccb451d8717f");
+var process = require("59dd04285c3f5451");
 !function(e, t) {
     module.exports = t();
 }(window, function() {
@@ -2358,7 +2358,7 @@ var process = require("9d19ccb451d8717f");
     ]);
 });
 
-},{"9d19ccb451d8717f":"d5jf4"}],"d5jf4":[function(require,module,exports) {
+},{"59dd04285c3f5451":"d5jf4"}],"d5jf4":[function(require,module,exports) {
 // shim for using process in browser
 var process = module.exports = {};
 // cached from whatever global is present so that test runners that stub it
@@ -2930,117 +2930,2204 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-var _logoPng = require("./img/logo.png");
-var _logoPngDefault = parcelHelpers.interopDefault(_logoPng);
-var _profileUserPng = require("./img/profile-user.png");
-var _profileUserPngDefault = parcelHelpers.interopDefault(_profileUserPng);
-//React ELement
-// const headingOne = React.createElement(
-//     "h1",
-//     {
-//         key: "h1"
-//     },
-//     "Heading 1"
-// );
-// const headingTwo = React.createElement(
-//     "h2",
-//     {
-//         key: "h2"
-//     },
-//     "Heading 2"
-// );
-// const headingThree = React.createElement(
-//     "h3",
-//     {
-//         key: "h3"
-//     },
-//     "Heading 3"
-// );
-// const container = React.createElement(
-//     "div",
-//     {
-//         className: "title",  
-//         key: "div" 
-//     },
-//     [headingOne, headingTwo, headingThree]
-// );
-//Create the same element using JSX
-// const container = (
-//     <div className="title">
-//         <h1>Heading 1 Container</h1>
-//         <h2>Heading 2 Container</h2>
-//         <h3>Heading 3 Container</h3>
-//     </div>
-// );
-//Create a functional components of the same with JSX
-// const ContainerMain = () => {
-//     return (
-//         <div className="title">
-//             {container}
-//             <h1>Heading 1 Function</h1>
-//             <h2>Heading 2 Function</h2>
-//             <h3>Heading 3 Function</h3>
-//         </div>
-//     )
-// }
-// Creating Header and Search and User Icon
-const HeaderMain = ()=>{
+/**Planning App
+ * App Name- Food Mela
+ * Header
+ *  - Logo
+ *  - Nav Items (Menu - Home , About Us, Contact, Cart)
+ * Body
+ *  - Search Bar
+ *  - RestaurantList
+ *      - RestaurantCard Component
+    *      -- Image
+    *      -- Name
+    *      -- Rating 
+    *      -- cusinies
+ * 
+ * Footer
+ *  - CopyRight
+ *  - Links
+ * 
+ */ const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: (0, _logoPngDefault.default),
-                alt: "logo"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "/",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM2i6ZvD9i-qlFxKlZcrGIiUMgEoQnOpQ0qOk_26c&s",
+                    alt: "logo"
+                }, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 30,
+                    columnNumber: 17
+                }, undefined)
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 65,
+                lineNumber: 29,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                type: "text",
-                className: "searchInput",
-                placeholder: "Search Here..."
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "/",
+                            children: "Home"
+                        }, void 0, false, {
+                            fileName: "App.js",
+                            lineNumber: 34,
+                            columnNumber: 21
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 33,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "/",
+                            children: "About Us"
+                        }, void 0, false, {
+                            fileName: "App.js",
+                            lineNumber: 37,
+                            columnNumber: 21
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 36,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "/",
+                            children: "Contact Us"
+                        }, void 0, false, {
+                            fileName: "App.js",
+                            lineNumber: 40,
+                            columnNumber: 21
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 39,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "/",
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "App.js",
+                            lineNumber: 43,
+                            columnNumber: 21
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 42,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "App.js",
-                lineNumber: 66,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: (0, _profileUserPngDefault.default),
-                alt: "User",
-                className: "userIcon"
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 67,
+                lineNumber: 32,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 64,
+        lineNumber: 28,
         columnNumber: 9
     }, undefined);
 };
-_c = HeaderMain;
+_c = Header;
+// Static Data
+// const menuItems = (
+//     {
+//         imageitems: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/9ec9ffd900c24ef751e2f34ba3d2fd4b",
+//         name: "Rominus Pizza & Burger",
+//         cusinies: ["Pizzas", "American", "Italian", "Desserts", "Snacks", "Fast Food"],
+//         ratings: "3.9"
+//    }
+// )
+// Live Data
+const restaurantList = [
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "106335",
+            "name": "Bismillah Non-veg Restaurant",
+            "uuid": "9efb52f3-2a00-4af8-8f73-f6e4596130af",
+            "city": "48",
+            "area": "KUNHADI",
+            "totalRatingsString": "1000+ ratings",
+            "cloudinaryImageId": "ugdymzpm3b2h89tf5gcw",
+            "cuisines": [
+                "North Indian",
+                "Biryani"
+            ],
+            "tags": [],
+            "costForTwo": 30000,
+            "costForTwoString": "₹300 FOR TWO",
+            "deliveryTime": 25,
+            "minDeliveryTime": 25,
+            "maxDeliveryTime": 25,
+            "slaString": "25 MINS",
+            "lastMileTravel": 3.9000000953674316,
+            "slugs": {
+                "restaurant": "bismillah-non-veg-restaurant-rangbari-talwandi",
+                "city": "kota"
+            },
+            "cityState": "48",
+            "address": "Devil Arab Road, Borkheda, Kota-Rajasthan - 324001, Near By Petrol Pump, Rangbari, Kota",
+            "locality": "BORKHEDA",
+            "parentId": 47275,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "FLAT125 off",
+                "shortDescriptionList": [
+                    {
+                        "meta": "FLAT125 off | Use FLATDEAL",
+                        "discountType": "Flat",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FLAT125 off | Use FLATDEAL",
+                        "discountType": "Flat",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "₹125 OFF",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Use FLATDEAL",
+                        "discountType": "Flat",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FLAT125 off | Use FLATDEAL",
+                        "discountType": "Flat",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "ribbon": [
+                {
+                    "type": "PROMOTED"
+                }
+            ],
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "cid=5806689~p=1~eid=00000186-4a6b-e6d1-3a19-d9c400dc013f",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "3.9 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "106335",
+                "deliveryTime": 25,
+                "minDeliveryTime": 25,
+                "maxDeliveryTime": 25,
+                "lastMileTravel": 3.9000000953674316,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": true,
+            "avgRating": "3.6",
+            "totalRatings": 1000,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "527058",
+            "name": "Rominus Pizza & Burger",
+            "uuid": "e6acf3be-b93b-44aa-99af-1e9d44fb4d8b",
+            "city": "48",
+            "area": "Borkheda",
+            "totalRatingsString": "500+ ratings",
+            "cloudinaryImageId": "9ec9ffd900c24ef751e2f34ba3d2fd4b",
+            "cuisines": [
+                "Pizzas",
+                "American",
+                "Italian",
+                "Desserts",
+                "Snacks",
+                "Fast Food"
+            ],
+            "tags": [],
+            "costForTwo": 20000,
+            "costForTwoString": "₹200 FOR TWO",
+            "deliveryTime": 30,
+            "minDeliveryTime": 30,
+            "maxDeliveryTime": 30,
+            "slaString": "30 MINS",
+            "lastMileTravel": 1.7999999523162842,
+            "slugs": {
+                "restaurant": "rominus-pizza-and-burger-borkheda-borkheda",
+                "city": "kota"
+            },
+            "cityState": "48",
+            "address": "Shop No. 1,2,3 B-9 Shree Radhika Apartment, Coral Park, Vill. Hanumantkheda TH. Ladpura Kota, Rajasthan -324001",
+            "locality": "Borkheda",
+            "parentId": 8387,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "60% off",
+                "shortDescriptionList": [
+                    {
+                        "meta": "60% off | Use TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "60% off up to ₹120 | Use code TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "60% OFF",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Use TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "60% off up to ₹120 | Use code TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "1.7 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "527058",
+                "deliveryTime": 30,
+                "minDeliveryTime": 30,
+                "maxDeliveryTime": 30,
+                "lastMileTravel": 1.7999999523162842,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "3.9",
+            "totalRatings": 500,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "612162",
+            "name": "Chai Garam",
+            "uuid": "c7a89d01-71c9-483b-ae8a-cf84894baeda",
+            "city": "48",
+            "area": "Borkheda",
+            "totalRatingsString": "Too Few Ratings",
+            "cloudinaryImageId": "ydwnulidjlpj2bl0pari",
+            "cuisines": [
+                "Beverages",
+                "Pastas",
+                "Fast Food"
+            ],
+            "tags": [],
+            "costForTwo": 8000,
+            "costForTwoString": "₹80 FOR TWO",
+            "deliveryTime": 29,
+            "minDeliveryTime": 29,
+            "maxDeliveryTime": 29,
+            "slaString": "29 MINS",
+            "lastMileTravel": 1.2000000476837158,
+            "slugs": {
+                "restaurant": "chai-garam-borkheda-borkheda",
+                "city": "kota"
+            },
+            "cityState": "48",
+            "address": "Shop No - 3, G-7, Coral Park, Naya Nohra, Rajasthan 324001,",
+            "locality": "Coral Park",
+            "parentId": 57003,
+            "unserviceable": false,
+            "veg": true,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "FREE DELIVERY",
+                "shortDescriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Free Delivery",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "1.2 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "612162",
+                "deliveryTime": 29,
+                "minDeliveryTime": 29,
+                "maxDeliveryTime": 29,
+                "lastMileTravel": 1.2000000476837158,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "--",
+            "totalRatings": 0,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "104941",
+            "name": "Pakwan Dhaba (MONALISA)",
+            "uuid": "e212bd9e-b0db-439d-a42c-7f6b2a0c8003",
+            "city": "48",
+            "area": "Borkhera",
+            "totalRatingsString": "5000+ ratings",
+            "cloudinaryImageId": "s6mpvlhayiof3kizgfha",
+            "cuisines": [
+                "Pastas",
+                "Chinese",
+                "North Indian",
+                "South Indian",
+                "Burgers",
+                "Ice Cream",
+                "Pizzas",
+                "Biryani"
+            ],
+            "tags": [],
+            "costForTwo": 15000,
+            "costForTwoString": "₹150 FOR TWO",
+            "deliveryTime": 28,
+            "minDeliveryTime": 28,
+            "maxDeliveryTime": 28,
+            "slaString": "28 MINS",
+            "lastMileTravel": 3.799999952316284,
+            "slugs": {
+                "restaurant": "pakwan-dhaba-rangbari-talwandi",
+                "city": "kota"
+            },
+            "cityState": "48",
+            "address": "Petrol Pump Ke Samne, Baran Road, Kota-Rajasthan - 324001, Borkhera, Rangbari, Kota",
+            "locality": "Rangbari",
+            "parentId": 153880,
+            "unserviceable": false,
+            "veg": true,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "FLAT150 off",
+                "shortDescriptionList": [
+                    {
+                        "meta": "FLAT150 off | Use FLATDEAL",
+                        "discountType": "Flat",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FLAT150 off | Use FLATDEAL",
+                        "discountType": "Flat",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "₹150 OFF",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Use FLATDEAL",
+                        "discountType": "Flat",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FLAT150 off | Use FLATDEAL",
+                        "discountType": "Flat",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "ribbon": [
+                {
+                    "type": "PROMOTED"
+                }
+            ],
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "cid=5806673~p=4~eid=00000186-4a6b-e6d1-3a19-d9c500dc047b",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "3.7 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "104941",
+                "deliveryTime": 28,
+                "minDeliveryTime": 28,
+                "maxDeliveryTime": 28,
+                "lastMileTravel": 3.799999952316284,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": true,
+            "avgRating": "3.6",
+            "totalRatings": 5000,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "544760",
+            "name": "Chai Sutta Bar",
+            "uuid": "140e5efd-4bc6-4f6b-a5ad-765a8c094607",
+            "city": "48",
+            "area": "Borkheda",
+            "totalRatingsString": "20+ ratings",
+            "cloudinaryImageId": "yjpffisgi2g2njsssxfm",
+            "cuisines": [
+                "Pizzas",
+                "Fast Food",
+                "Beverages",
+                "Snacks"
+            ],
+            "tags": [],
+            "costForTwo": 20000,
+            "costForTwoString": "₹200 FOR TWO",
+            "deliveryTime": 37,
+            "minDeliveryTime": 37,
+            "maxDeliveryTime": 37,
+            "slaString": "37 MINS",
+            "lastMileTravel": 1.899999976158142,
+            "slugs": {
+                "restaurant": "chai-sutta-bar-borkheda-borkheda",
+                "city": "kota"
+            },
+            "cityState": "48",
+            "address": "SHOP NO. G-9, PLOT NO. B-31, CORAL PARK, BARAN ROAD KOTA",
+            "locality": "Borkheda",
+            "parentId": 14909,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "20% off",
+                "shortDescriptionList": [
+                    {
+                        "meta": "20% off | Use TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "20% off up to ₹50 | Use code TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "20% OFF",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Use TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "20% off up to ₹50 | Use code TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "1.8 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "544760",
+                "deliveryTime": 37,
+                "minDeliveryTime": 37,
+                "maxDeliveryTime": 37,
+                "lastMileTravel": 1.899999976158142,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "3.3",
+            "totalRatings": 20,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "533509",
+            "name": "Giani Ice Cream",
+            "uuid": "50b7f0df-9971-49a0-b85b-58ae666d7273",
+            "city": "48",
+            "area": "Borkheda",
+            "totalRatingsString": "Too Few Ratings",
+            "cloudinaryImageId": "fcjshd1j2tabvivyjgb3",
+            "cuisines": [
+                "Ice Cream",
+                "Beverages"
+            ],
+            "tags": [],
+            "costForTwo": 30000,
+            "costForTwoString": "₹300 FOR TWO",
+            "deliveryTime": 32,
+            "minDeliveryTime": 32,
+            "maxDeliveryTime": 32,
+            "slaString": "32 MINS",
+            "lastMileTravel": 1.600000023841858,
+            "slugs": {
+                "restaurant": "giani-borkheda-borkheda",
+                "city": "kota"
+            },
+            "cityState": "48",
+            "address": "Shop no.-5, G-7, Coral Park, Nayanohara, Kota, (RaJ),324001",
+            "locality": "Borkheda",
+            "parentId": 6577,
+            "unserviceable": false,
+            "veg": true,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "20% off",
+                "shortDescriptionList": [
+                    {
+                        "meta": "20% off | Use TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "20% off up to ₹50 | Use code TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "20% OFF",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Use TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "20% off up to ₹50 | Use code TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "1.6 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "533509",
+                "deliveryTime": 32,
+                "minDeliveryTime": 32,
+                "maxDeliveryTime": 32,
+                "lastMileTravel": 1.600000023841858,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "--",
+            "totalRatings": 0,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "392385",
+            "name": "Ratan Sweets Namkeen Bakery",
+            "uuid": "197d34c9-b268-4176-b401-46860d9b8146",
+            "city": "48",
+            "area": "Rampura",
+            "totalRatingsString": "1000+ ratings",
+            "cloudinaryImageId": "rgo7ivo6i5erbbhm42x7",
+            "cuisines": [
+                "Desserts"
+            ],
+            "tags": [],
+            "costForTwo": 20000,
+            "costForTwoString": "₹200 FOR TWO",
+            "deliveryTime": 31,
+            "minDeliveryTime": 31,
+            "maxDeliveryTime": 31,
+            "slaString": "31 MINS",
+            "lastMileTravel": 7.400000095367432,
+            "slugs": {
+                "restaurant": "ratan-sweets-namkeen-bakery-rampura-rampura",
+                "city": "kota"
+            },
+            "cityState": "48",
+            "address": "SHASHI JAIN S/O MANGU LAL JAIN ADD:-NAYAPURA KOTA, Kota, Rajasthan- 324001",
+            "locality": "Rampura",
+            "parentId": 253520,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "FREE DELIVERY",
+                "shortDescriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Free Delivery",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "ribbon": [
+                {
+                    "type": "PROMOTED"
+                }
+            ],
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "cid=5865440~p=7~eid=00000186-4a6b-e6d1-3a19-d9c600dc075c",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "7.4 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "392385",
+                "deliveryTime": 31,
+                "minDeliveryTime": 31,
+                "maxDeliveryTime": 31,
+                "lastMileTravel": 7.400000095367432,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": true,
+            "avgRating": "3.9",
+            "totalRatings": 1000,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "527049",
+            "name": "Burger Lane",
+            "uuid": "ddcdbab7-9680-4434-b8e4-2dd9897581de",
+            "city": "48",
+            "area": "Borkheda",
+            "totalRatingsString": "Too Few Ratings",
+            "cloudinaryImageId": "59fcf06562729551dd7970d16e1cbde9",
+            "cuisines": [
+                "Burgers",
+                "American"
+            ],
+            "tags": [],
+            "costForTwo": 20000,
+            "costForTwoString": "₹200 FOR TWO",
+            "deliveryTime": 36,
+            "minDeliveryTime": 36,
+            "maxDeliveryTime": 36,
+            "slaString": "36 MINS",
+            "lastMileTravel": 1.899999976158142,
+            "slugs": {
+                "restaurant": "burger-lane-by-rominus-borkheda-borkheda",
+                "city": "kota"
+            },
+            "cityState": "48",
+            "address": "Shop No. 1,2,3 B-9 Shree Radhika Apartment, Coral Park, Vill. Hanumantkheda TH. Ladpura Kota, Rajasthan -324001",
+            "locality": "Borkheda",
+            "parentId": 51364,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "60% off",
+                "shortDescriptionList": [
+                    {
+                        "meta": "60% off | Use TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "60% off up to ₹120 | Use code TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "60% OFF",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Use TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "60% off up to ₹120 | Use code TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "1.8 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "527049",
+                "deliveryTime": 36,
+                "minDeliveryTime": 36,
+                "maxDeliveryTime": 36,
+                "lastMileTravel": 1.899999976158142,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "--",
+            "totalRatings": 0,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "511023",
+            "name": "Shree Mahaveer Restaurant",
+            "uuid": "64f367da-8d00-49ca-8486-78c7af886a76",
+            "city": "48",
+            "area": "Borkheda",
+            "totalRatingsString": "Too Few Ratings",
+            "cloudinaryImageId": "m4mqtiunxnqhdtuqkbyp",
+            "cuisines": [
+                "Indian",
+                "Snacks"
+            ],
+            "tags": [],
+            "costForTwo": 10000,
+            "costForTwoString": "₹100 FOR TWO",
+            "deliveryTime": 35,
+            "minDeliveryTime": 35,
+            "maxDeliveryTime": 35,
+            "slaString": "35 MINS",
+            "lastMileTravel": 2,
+            "slugs": {
+                "restaurant": "shree-mahaveer-restaurant-borkheda-borkheda",
+                "city": "kota"
+            },
+            "cityState": "48",
+            "address": "prop. vishal s/o kailash manpura ,baran road kota",
+            "locality": "Borkheda",
+            "parentId": 294365,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "FREE DELIVERY",
+                "shortDescriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Free Delivery",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "2 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "511023",
+                "deliveryTime": 35,
+                "minDeliveryTime": 35,
+                "maxDeliveryTime": 35,
+                "lastMileTravel": 2,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "--",
+            "totalRatings": 0,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "614562",
+            "name": "Manwar Foods",
+            "uuid": "05a910ab-fc56-4c60-86e5-31b2f33ddb66",
+            "city": "48",
+            "area": "Borkheda",
+            "totalRatingsString": "50+ ratings",
+            "cloudinaryImageId": "zvjtzaxrestpibb9n5d3",
+            "cuisines": [
+                "North Indian",
+                "Biryani"
+            ],
+            "tags": [],
+            "costForTwo": 50000,
+            "costForTwoString": "₹500 FOR TWO",
+            "deliveryTime": 34,
+            "minDeliveryTime": 34,
+            "maxDeliveryTime": 34,
+            "slaString": "34 MINS",
+            "lastMileTravel": 2.299999952316284,
+            "slugs": {
+                "restaurant": "manvaar-foods-borkheda-borkheda",
+                "city": "kota"
+            },
+            "cityState": "48",
+            "address": "241 - 242 gurunanak nagar manpura baran road kota rajasthan",
+            "locality": "Gurunanak Nagar",
+            "parentId": 366492,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "50% off",
+                "shortDescriptionList": [
+                    {
+                        "meta": "50% off | Use TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "50% off up to ₹100 | Use code TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "50% OFF",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Use TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "50% off up to ₹100 | Use code TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "2.2 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "614562",
+                "deliveryTime": 34,
+                "minDeliveryTime": 34,
+                "maxDeliveryTime": 34,
+                "lastMileTravel": 2.299999952316284,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "3.8",
+            "totalRatings": 50,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "560417",
+            "name": "MJD Restaurant and Banquet",
+            "uuid": "e294f494-767b-4f74-918f-9ff375f14b35",
+            "city": "48",
+            "area": "Borkheda",
+            "totalRatingsString": "20+ ratings",
+            "cloudinaryImageId": "xb7jkurmyc331h7cl7eo",
+            "cuisines": [
+                "Fast Food",
+                "Desserts",
+                "Beverages"
+            ],
+            "tags": [],
+            "costForTwo": 35000,
+            "costForTwoString": "₹350 FOR TWO",
+            "deliveryTime": 31,
+            "minDeliveryTime": 31,
+            "maxDeliveryTime": 31,
+            "slaString": "31 MINS",
+            "lastMileTravel": 2.9000000953674316,
+            "slugs": {
+                "restaurant": "mjd-restaurant-and-banquet-borkheda-borkheda",
+                "city": "kota"
+            },
+            "cityState": "48",
+            "address": "Plot number 7, Baran Rd, Samridhi Nagar, Sarvodaya Nagar, Chitresh Nagar, Borkhera, Kota, Rajasthan 324001, India",
+            "locality": "Borkheda",
+            "parentId": 337433,
+            "unserviceable": false,
+            "veg": true,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "FREE DELIVERY",
+                "shortDescriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Free Delivery",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "2.9 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "560417",
+                "deliveryTime": 31,
+                "minDeliveryTime": 31,
+                "maxDeliveryTime": 31,
+                "lastMileTravel": 2.9000000953674316,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "4.1",
+            "totalRatings": 20,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "360696",
+            "name": "Sawariya da dhaba",
+            "uuid": "2dd33c39-28ff-4f30-ba98-68c2f86bfafc",
+            "city": "48",
+            "area": "Borkhera",
+            "totalRatingsString": "Too Few Ratings",
+            "cloudinaryImageId": "pzvoxselzilzkpriordn",
+            "cuisines": [
+                "Indian",
+                "Thalis",
+                "Tandoor"
+            ],
+            "tags": [],
+            "costForTwo": 30000,
+            "costForTwoString": "₹300 FOR TWO",
+            "deliveryTime": 37,
+            "minDeliveryTime": 37,
+            "maxDeliveryTime": 37,
+            "slaString": "37 MINS",
+            "lastMileTravel": 3.5999999046325684,
+            "slugs": {
+                "restaurant": "sawariya-da-dhaba-borkheda-borkheda",
+                "city": "kota"
+            },
+            "cityState": "48",
+            "address": "PROP. PRAHLAD KUSHWAH, MAIN ROAD BORKHERA , KOTA",
+            "locality": "Borkheda",
+            "parentId": 179242,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "FREE DELIVERY",
+                "shortDescriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Free Delivery",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "3.5 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "360696",
+                "deliveryTime": 37,
+                "minDeliveryTime": 37,
+                "maxDeliveryTime": 37,
+                "lastMileTravel": 3.5999999046325684,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "--",
+            "totalRatings": 0,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "475326",
+            "name": "Thikaana",
+            "uuid": "e0f35e7c-32dc-4941-b418-b568b3a4cfb0",
+            "city": "48",
+            "area": "Borkheda",
+            "totalRatingsString": "Too Few Ratings",
+            "cloudinaryImageId": "ducrwtqp5uwfx5oesurk",
+            "cuisines": [
+                "Arabian",
+                "North Indian"
+            ],
+            "tags": [],
+            "costForTwo": 45000,
+            "costForTwoString": "₹450 FOR TWO",
+            "deliveryTime": 34,
+            "minDeliveryTime": 34,
+            "maxDeliveryTime": 34,
+            "slaString": "34 MINS",
+            "lastMileTravel": 4,
+            "slugs": {
+                "restaurant": "thikaana-borkheda-borkheda",
+                "city": "kota"
+            },
+            "cityState": "48",
+            "address": "Shekhawat RS 56 brijvilla, Madhuwan Colony, Rajasthan 324002, India",
+            "locality": "Borkheda",
+            "parentId": 285382,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "FREE DELIVERY",
+                "shortDescriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Free Delivery",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "4 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "475326",
+                "deliveryTime": 34,
+                "minDeliveryTime": 34,
+                "maxDeliveryTime": 34,
+                "lastMileTravel": 4,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "--",
+            "totalRatings": 0,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "659343",
+            "name": "Engineer Cake Point 2.0	",
+            "uuid": "2c1bf317-ba05-4ecc-9928-f2440e45f1b3",
+            "city": "48",
+            "area": "Talwandi",
+            "totalRatingsString": "Too Few Ratings",
+            "cloudinaryImageId": "28b95a24183105eafe5230e7896d32d5",
+            "cuisines": [
+                "Bakery"
+            ],
+            "tags": [],
+            "costForTwo": 50000,
+            "costForTwoString": "₹500 FOR TWO",
+            "deliveryTime": 34,
+            "minDeliveryTime": 34,
+            "maxDeliveryTime": 34,
+            "slaString": "34 MINS",
+            "lastMileTravel": 4.400000095367432,
+            "slugs": {
+                "restaurant": "engineer-cake-point-2.0-talwandi-talwandi",
+                "city": "kota"
+            },
+            "cityState": "48",
+            "address": "C-7-1 LAJPAT NAGAR 1ST GRAMIN POLICE LINE BORKHEDA  WARD 17 KOTA RAJASTHAN",
+            "locality": "Lajpat Nagar",
+            "parentId": 396035,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "FREE DELIVERY",
+                "shortDescriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    },
+                    {
+                        "meta": "49% off on all orders",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    },
+                    {
+                        "meta": "49% off on all orders",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "49% OFF",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Free Delivery",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    },
+                    {
+                        "meta": "49% off on all orders",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "4.4 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "659343",
+                "deliveryTime": 34,
+                "minDeliveryTime": 34,
+                "maxDeliveryTime": 34,
+                "lastMileTravel": 4.400000095367432,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "--",
+            "totalRatings": 0,
+            "new": true
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "532193",
+            "name": "Krishna Bakery",
+            "uuid": "8568f0ea-f56a-41d3-addc-dbef2e712826",
+            "city": "48",
+            "area": "Borkheda",
+            "totalRatingsString": "Too Few Ratings",
+            "cloudinaryImageId": "e2csm1iwsripo32yswnr",
+            "cuisines": [
+                "Bakery"
+            ],
+            "tags": [],
+            "costForTwo": 30000,
+            "costForTwoString": "₹300 FOR TWO",
+            "deliveryTime": 38,
+            "minDeliveryTime": 38,
+            "maxDeliveryTime": 38,
+            "slaString": "38 MINS",
+            "lastMileTravel": 4.800000190734863,
+            "slugs": {
+                "restaurant": "krishna-bakery-borkheda-borkheda",
+                "city": "kota"
+            },
+            "cityState": "48",
+            "address": "23,nand vihar,borkheda,kota.ward 22 kota rajasthan",
+            "locality": "Borkheda",
+            "parentId": 8853,
+            "unserviceable": false,
+            "veg": true,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "FREE DELIVERY",
+                "shortDescriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Free Delivery",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "4.8 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "532193",
+                "deliveryTime": 38,
+                "minDeliveryTime": 38,
+                "maxDeliveryTime": 38,
+                "lastMileTravel": 4.800000190734863,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "--",
+            "totalRatings": 0,
+            "new": false
+        },
+        subtype: "basic"
+    }
+];
+// Restaurant Listing
+// const RestaurantCard = (props) => {
+//     return (
+//         <div className="card">
+//             <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + props.restaurant.data?.cloudinaryImageId} alt="food-image"/>
+//             <div className="card-inner">
+//                 <h2>{props.restaurant.data?.name}</h2>
+//                 <p>{props.restaurant.data?.cuisines.join(" , ")}</p>
+//                 <p>{props.restaurant.data?.totalRatingsString} Stars</p>
+//             </div>            
+//         </div>
+//     );
+// };
+//Destructing Part1
+// const RestaurantCard = ({restaurant}) => {
+//     return (
+//         <div className="card">
+//             <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + restaurant.data?.cloudinaryImageId} alt="food-image"/>
+//             <div className="card-inner">
+//                 <h2>{restaurant.data?.name}</h2>
+//                 <p>{restaurant.data?.cuisines.join(" , ")}</p>
+//                 <p>{restaurant.data?.totalRatingsString} Stars</p>
+//             </div>            
+//         </div>
+//     );
+// };
+//Destructing Part 2
+// const RestaurantCard = ({restaurant}) => {
+//     const {name, cuisines, totalRatingsString, cloudinaryImageId} = restaurant.data;
+//     return (
+//         <div className="card">
+//             <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + cloudinaryImageId} alt="food-image"/>
+//             <div className="card-inner">
+//                 <h2>{name}</h2>
+//                 <p>{cuisines.join(" , ")}</p>
+//                 <p>{totalRatingsString} Stars</p>
+//             </div>            
+//         </div>
+//     );
+// };
+//Destructing Part 3
+const RestaurantCard = ({ name , cuisines , totalRatingsString , cloudinaryImageId  })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + cloudinaryImageId,
+                alt: "food-image"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 2078,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card-inner",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: name
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 2080,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: cuisines.join(" , ")
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 2081,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: [
+                            totalRatingsString,
+                            " Stars"
+                        ]
+                    }, void 0, true, {
+                        fileName: "App.js",
+                        lineNumber: 2082,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "App.js",
+                lineNumber: 2079,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 2077,
+        columnNumber: 9
+    }, undefined);
+};
+_c1 = RestaurantCard;
+// const Body = () => {
+//     return (
+//         <div className="cardBlock">
+//             <RestaurantCard restaurant = {restaurantList[0]}/>
+//             <RestaurantCard restaurant = {restaurantList[1]}/>
+//             <RestaurantCard restaurant = {restaurantList[2]}/>
+//             <RestaurantCard restaurant = {restaurantList[3]}/>
+//             <RestaurantCard restaurant = {restaurantList[4]}/>
+//             <RestaurantCard restaurant = {restaurantList[5]}/>
+//             <RestaurantCard restaurant = {restaurantList[6]}/>
+//         </div>
+//     )
+// };
+// Part 4
+// const Body = () => {
+//     return (
+//         <div className="cardBlock">
+//             <RestaurantCard {...restaurantList[0].data}/>
+//             <RestaurantCard {...restaurantList[1].data}/>
+//             <RestaurantCard {...restaurantList[2].data}/>
+//         </div>
+//     )
+// };
+// Part 5 using Map
+const Body = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "cardBlock",
+        children: [
+            restaurantList.map((restaurant)=>{
+                return /*#__PURE__*/ (0, _react.createElement)(RestaurantCard, {
+                    ...restaurant.data,
+                    key: restaurant.data.id,
+                    __source: {
+                        fileName: "App.js",
+                        lineNumber: 2119,
+                        columnNumber: 28
+                    },
+                    __self: undefined
+                });
+            }),
+            ";"
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 2116,
+        columnNumber: 9
+    }, undefined);
+};
+_c2 = Body;
+const Footer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "text-center",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+            children: "Copyright @ 2023. Food Mela"
+        }, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 2129,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 2128,
+        columnNumber: 9
+    }, undefined);
+};
+_c3 = Footer;
+const AppLayout = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 2138,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 2140,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 2142,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_c4 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderMain, {}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 77,
+    lineNumber: 2150,
     columnNumber: 13
 }, undefined));
-var _c;
-$RefreshReg$(_c, "HeaderMain");
+var _c, _c1, _c2, _c3, _c4;
+$RefreshReg$(_c, "Header");
+$RefreshReg$(_c1, "RestaurantCard");
+$RefreshReg$(_c2, "Body");
+$RefreshReg$(_c3, "Footer");
+$RefreshReg$(_c4, "AppLayout");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj","./img/logo.png":"8BmgD","./img/profile-user.png":"kl4H1"}],"21dqq":[function(require,module,exports) {
+},{"react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj"}],"21dqq":[function(require,module,exports) {
 "use strict";
-module.exports = require("4f5261e51e97b17a");
+module.exports = require("6522d11b1e6adb1e");
 
-},{"4f5261e51e97b17a":"6YvXz"}],"6YvXz":[function(require,module,exports) {
+},{"6522d11b1e6adb1e":"6YvXz"}],"6YvXz":[function(require,module,exports) {
 /**
  * @license React
  * react.development.js
@@ -4908,7 +6995,7 @@ module.exports = require("4f5261e51e97b17a");
 
 },{}],"lOjBx":[function(require,module,exports) {
 "use strict";
-var m = require("d2375628a62dcdfe");
+var m = require("8ea96e8ac139c5d3");
 var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
 exports.createRoot = function(c, o) {
     i.usingClientEntryPoint = true;
@@ -4927,7 +7014,7 @@ exports.hydrateRoot = function(c, h, o) {
     }
 };
 
-},{"d2375628a62dcdfe":"j6uA9"}],"j6uA9":[function(require,module,exports) {
+},{"8ea96e8ac139c5d3":"j6uA9"}],"j6uA9":[function(require,module,exports) {
 "use strict";
 function checkDCE() {
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") return;
@@ -4941,9 +7028,9 @@ function checkDCE() {
     // a false positive.
     throw new Error("^_^");
 }
-module.exports = require("4ed0646142404bf3");
+module.exports = require("dda14714d9286b80");
 
-},{"4ed0646142404bf3":"3iA9v"}],"3iA9v":[function(require,module,exports) {
+},{"dda14714d9286b80":"3iA9v"}],"3iA9v":[function(require,module,exports) {
 /**
  * @license React
  * react-dom.development.js
@@ -4956,8 +7043,8 @@ module.exports = require("4ed0646142404bf3");
 (function() {
     "use strict";
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
-    var React = require("8304bfdef1186a20");
-    var Scheduler = require("45a2d27c8e82d5f1");
+    var React = require("4fdee951d8ec546b");
+    var Scheduler = require("fe3fffdec0222bcd");
     var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
     var suppressWarning = false;
     function setSuppressWarning(newSuppressWarning) {
@@ -25928,11 +28015,11 @@ module.exports = require("4ed0646142404bf3");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{"8304bfdef1186a20":"21dqq","45a2d27c8e82d5f1":"juvHo"}],"juvHo":[function(require,module,exports) {
+},{"4fdee951d8ec546b":"21dqq","fe3fffdec0222bcd":"juvHo"}],"juvHo":[function(require,module,exports) {
 "use strict";
-module.exports = require("46b34056b4aeabbe");
+module.exports = require("8d0bfda47bef1e16");
 
-},{"46b34056b4aeabbe":"RqdIf"}],"RqdIf":[function(require,module,exports) {
+},{"8d0bfda47bef1e16":"RqdIf"}],"RqdIf":[function(require,module,exports) {
 /**
  * @license React
  * scheduler.development.js
@@ -26418,7 +28505,7 @@ exports.export = function(dest, destName, get) {
 
 },{}],"km3Ru":[function(require,module,exports) {
 "use strict";
-var Refresh = require("5926c17365e7db2");
+var Refresh = require("f1a92165fb5b591a");
 function debounce(func, delay) {
     {
         let timeout = undefined;
@@ -26549,11 +28636,11 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"5926c17365e7db2":"786KC"}],"iTorj":[function(require,module,exports) {
+},{"f1a92165fb5b591a":"786KC"}],"iTorj":[function(require,module,exports) {
 "use strict";
-module.exports = require("d5e2bb5d82ebcb4b");
+module.exports = require("c6a3d8dcbbd190bf");
 
-},{"d5e2bb5d82ebcb4b":"48uCM"}],"48uCM":[function(require,module,exports) {
+},{"c6a3d8dcbbd190bf":"48uCM"}],"48uCM":[function(require,module,exports) {
 /**
  * @license React
  * react-jsx-dev-runtime.development.js
@@ -26565,7 +28652,7 @@ module.exports = require("d5e2bb5d82ebcb4b");
  */ "use strict";
 (function() {
     "use strict";
-    var React = require("6b1d98bd982e1b55");
+    var React = require("b38bb2ab053c932");
     // ATTENTION
     // When adding new symbols to this file,
     // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
@@ -27384,46 +29471,6 @@ module.exports = require("d5e2bb5d82ebcb4b");
     exports.jsxDEV = jsxDEV$1;
 })();
 
-},{"6b1d98bd982e1b55":"21dqq"}],"8BmgD":[function(require,module,exports) {
-module.exports = require("f783a5b247fcaa2d").getBundleURL("lly8x") + "logo.b82d6c7c.png" + "?" + Date.now();
-
-},{"f783a5b247fcaa2d":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"kl4H1":[function(require,module,exports) {
-module.exports = require("5929e623e279be33").getBundleURL("lly8x") + "profile-user.85072572.png" + "?" + Date.now();
-
-},{"5929e623e279be33":"lgJ39"}]},["1xC6H","lyZ4E","2Ew96"], "2Ew96", "parcelRequire6770")
+},{"b38bb2ab053c932":"21dqq"}]},["1xC6H","lyZ4E","2Ew96"], "2Ew96", "parcelRequire6770")
 
 //# sourceMappingURL=index.7826abd7.js.map
